@@ -1,17 +1,6 @@
 const String getProducts = """
 query {
-  products(limit: 4, offset: 0, title: "Wholeness") {
-    id
-    title
-    price
-    description
-  }
-}
-""";
-
-const String getProductById = """
-query {
-  product(id: "3279") {
+  products {
     id
     title
     price
@@ -20,6 +9,19 @@ query {
   }
 }
 """;
+
+
+// const String getProductById = """
+// query {
+//   product(id: "3279") {
+//     id
+//     title
+//     price
+//     description
+//     images
+//   }
+// }
+// """;
 
 const String addProduct = """
 mutation createProduct(
